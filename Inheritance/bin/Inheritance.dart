@@ -5,6 +5,13 @@ class Person {
   double heighMetric;
   num waistSize;
   bool facialHair, Tattoos, Pregnant, programmer;
+
+  void sayHello(){
+    print("Hello");
+  }
+  void defaultNationalty(){
+    print("Global");
+  }
 }
 
 
@@ -22,6 +29,11 @@ class Person {
         this.facialHair.toString()
         + ". Does she have tatoos? " + this.Tattoos.toString() + ".");
   }
+  @override
+  void defaultNationalty() {
+    // TODO: implement defaultNationalty
+    print("Korean/American");
+  }
   }
 
 
@@ -34,7 +46,18 @@ class Person {
   "m and a waist size of " + this.waistSize.toString() + "cm"
   "and is pregnant? " + this.Pregnant.toString());
   }
+  @override
+  void sayHello() {
+    // TODO: implement sayHello
+    print("Dag Se");
   }
+  @override
+  void defaultNationalty() {
+    // TODO: implement defaultNationalty
+    print("South African");
+  }
+  }
+
   class Eric extends Person {
 
   void completely() {
@@ -42,8 +65,17 @@ class Person {
   + " Breasts, and a height of " + heighMetric.toString() + "m and a waist size of " + this.waistSize.toString() + "cm"
   " and is a programmer? " + this.programmer.toString());
   }
+  @override
+  void sayHello() {
+    // TODO: implement sayHello
+    print("Sawubona");
+  }
 
-
+  @override
+  void defaultNationalty() {
+    // TODO: implement defaultNationalty
+    print("South African");
+  }
   }
 
 
@@ -60,6 +92,8 @@ class Person {
   bonni.Tattoos = true;
 
   bonni.assets();
+  bonni.sayHello();
+  bonni.defaultNationalty();
 
   print(" ");
 
@@ -76,6 +110,8 @@ class Person {
   Chez.Pregnant = true;
 
   Chez.myLove();
+  Chez.sayHello();
+  Chez.defaultNationalty();
 
   print(" ");
 
@@ -92,5 +128,7 @@ class Person {
   Me.programmer = true;
 
   Me.completely();
+  Me.sayHello();
+  Me.defaultNationalty();
   }
 
