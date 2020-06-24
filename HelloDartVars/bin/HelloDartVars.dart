@@ -28,7 +28,7 @@ void main(List<String> arguments) { // Entry point for execution.
 
   Remainder = What remains from a division operation
   Equality and relational operators (==, !=, >, <, >=, <=)
-  Type test operators: 
+  as, is and is!
   */
 
  int number = 34;
@@ -39,12 +39,12 @@ void main(List<String> arguments) { // Entry point for execution.
  double pi = 3.14;
  double gravity = 9.8;
 
- print(gravity == pi);
+// print(gravity == pi);
+//
+// print(result);
+// print(4 <= 3);
 
- print(result);
- print(4 <= 3);
-
-
+print(number is bool);
 
 
 
