@@ -1,8 +1,9 @@
-void main(List<String> arguments) { // Entry point for execution.
-  //Variable = spot in memory / place holder for a value.
+void main(List<String> arguments) {
+ // Entry point for execution.
+ //Variable = spot in memory / place holder for a value.
 
-   // this is a string variable.
-  /*Variable types:
+ // this is a string variable.
+ /*Variable types:
   string:
   number:
     integers and doubles
@@ -21,32 +22,136 @@ void main(List<String> arguments) { // Entry point for execution.
   Final is used when the variable need to always remain the same / never change
    */
 
-  /*
+ /*
   Concatenation: Using multiple variables in the same command. use them within the Parentheses with a $
 
   Arithmetic Operators ( -, + * , /, %(Remainder)
 
   Remainder = What remains from a division operation
   Equality and relational operators (==, !=, >, <, >=, <=)
-  as, is and is!
+  type test opperators: as, is and is!
+  Logical opperators ( ! (inverts boolean result.), ||, &&)
+  OR (||) -> only needs one side of the expression to be true, for the whole expression to return true
+  AND (&&) -> The expression is tru if both sides are true.
   */
 
  int number = 34;
  int number2 = 2;
 
  var result = number2 != number;
-
+ var i = 0;
  double pi = 3.14;
  double gravity = 9.8;
 
-// print(gravity == pi);
+////For loop
+// var Fruit = "Mango";
+// for (var i = 0; i < 10; i++){
+//  if (i % 3 == 0) {
+//   print("$Fruit $i");
+//  }
+//}
+
+//Switch and case
+var age = 18;
+
+  switch (age) {
+   case 19:
+    print("you may purchase Cigarettes");
+    break;
+   case 20:
+    print("Still good");
+    break;
+   case 89:
+    print("Too Old");
+    break;
+   case 18:
+    print("Whoo Hoo!");
+    break;
+   default:
+    print("Select an age");
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+// while and do while loops
+// do {
+//  print("Going");
+// } while (number < 30);  // Infinite loop
+
+/*while(i < 30){
+  i++;
+  print("$i Going");
+//  break;
+
+}*/  // Infinite loop
+
+
+
+
+
+
+
+
+
+
+ // if( !(number != 100) && number <= 100 ){ //False AND true
+//  print("Not 100");
+// }
+// else{
+//  print("Yess!");
+// }
+
+
+// if( !(number != 100) || number >= 100 ){ //False or true
+//  print("Not 100");
+// }
+// else{
+//  print("Yess!");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // print(gravity == pi);
 //
 // print(result);
 // print(4 <= 3);
 
-print(number is bool);
+//print(number is! bool);
+
+//if statement
 
 
+
+
+
+
+
+
+//if(number != 34){
+// print("If true, This will run");
+//}
+//else{
+// print("it evidently was not true!");
+//}
 
 
 
