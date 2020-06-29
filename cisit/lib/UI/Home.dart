@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget { // So much more robust to use Scaffold
+import 'Page2.dart';
 
+class Home extends StatelessWidget {
+  // So much more robust to use Scaffold
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +13,34 @@ class Home extends StatelessWidget { // So much more robust to use Scaffold
         centerTitle: true,
         backgroundColor: Colors.deepOrangeAccent.shade200,
         actions: <Widget>[
-          IconButton(icon:Icon(Icons.home), onPressed: () => runApp( new MaterialApp(
-              home: Home())),
-          )],
+          IconButton(
+            icon: Icon(Icons.home),
+            onPressed: () => runApp(new MaterialApp(home: Home())),
+          ),
+          IconButton(
+            icon: Icon(Icons.pages),
+            onPressed: () => runApp(new MaterialApp(home: Page2())),
+          )
+        ],
       ),
-      body: Center(
-        child: Text("Hello Again"),
+      backgroundColor: Colors.blueGrey,
+      body: Container(
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+          InkWell()
+
+          ],
+        )
       ),
+      persistentFooterButtons: <Widget>[
+
+        Text(
+          "This is the footer bar",
+          textAlign: TextAlign.left,
+        ),
+      ],
     );
   }
 }
