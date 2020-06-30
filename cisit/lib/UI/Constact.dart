@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'Home.dart';
 
-class Page2 extends StatelessWidget {
+class Contact extends StatelessWidget {
   // So much more robust to use Scaffold
 
   @override
@@ -19,6 +19,10 @@ class Page2 extends StatelessWidget {
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.email), title: Text("email Dev")),
+        BottomNavigationBarItem(icon: Icon(Icons.arrow_back), title: Text("Go Back"),)
+      ], onTap: (int index) => runApp(new MaterialApp(home: Home())),),
       backgroundColor: Colors.blueGrey,
       body: Container(
           alignment: Alignment.center,
@@ -27,11 +31,11 @@ class Page2 extends StatelessWidget {
             children: <Widget>[
               InkWell(
                 child: Text(
-                  "Here at CISIT, we pride ourselve is being here",
+                  "We are here to server evidently!",
                   style: TextStyle(fontSize: 23.4, fontStyle: FontStyle.italic),
                 ),
               ),
-            CustomButton()
+              CustomButton()
             ],
           )),
     );
@@ -42,18 +46,18 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        final snackBar = SnackBar(content: Text("Thank you for pressing me!"),);
-        Scaffold.of(context).showSnackBar(snackBar);
-      },
-      child: Container(
-        padding: EdgeInsets.all(10.0),
-        decoration: BoxDecoration(
-          color: Colors.blue,
-          borderRadius: BorderRadius.circular(8.0)
-        ),
-        child: Text("Button"),
-      )
+        onTap: () {
+          final snackBar = SnackBar(content: Text("Thank you for pressing me!"),);
+          Scaffold.of(context).showSnackBar(snackBar);
+        },
+        child: Container(
+          padding: EdgeInsets.all(10.0),
+          decoration: BoxDecoration(
+              color: Colors.blue,
+              borderRadius: BorderRadius.circular(8.0)
+          ),
+          child: Text("Button2"),
+        )
     );
   }
 

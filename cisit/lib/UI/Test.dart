@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 
-import 'Constact.dart';
+import 'Home.dart';
 import 'Page2.dart';
 
-class Home extends StatelessWidget {
+class test extends StatelessWidget {
   // So much more robust to use Scaffold
 
   @override
@@ -23,26 +23,18 @@ class Home extends StatelessWidget {
       ),
       backgroundColor: Colors.blueGrey,
       body: Container(
-        alignment: Alignment.center,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-          InkWell(
-            child: Text("About Us", style: TextStyle(fontSize: 23.4, fontStyle: FontStyle.italic),),
+          alignment: Alignment.center,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              InkWell(
+                child: Text("There is nothing for you here", style: TextStyle(fontSize: 23.4, fontStyle: FontStyle.italic),),
 
-            onTap: () => runApp(new MaterialApp(home: Page2())),
-          ),
-            InkWell(
-              child: Text("Services", style: TextStyle(fontSize: 23.4, fontStyle: FontStyle.italic ),),
+                onTap: () => runApp(new MaterialApp(home: Home())),
+              )
 
-              onTap: () => runApp(new MaterialApp(home: Contact())),
-            )
-
-          ],
-
-        ),
-
-
+            ],
+          )
       ),
       persistentFooterButtons: <Widget>[
 
